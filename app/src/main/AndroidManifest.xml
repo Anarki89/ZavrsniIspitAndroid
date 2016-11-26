@@ -24,7 +24,8 @@
             android:name=".SecondActivity"
             android:icon="@mipmap/ic_launcher"
             android:label="Beleske Detail"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme.NoActionBar"
+            android:parentActivityName=".MainActivity"/>
         <activity
             android:name="preferences.Preferences"
             android:label="@string/activity_settings_name"

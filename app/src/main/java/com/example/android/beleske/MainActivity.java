@@ -123,8 +123,8 @@ public class MainActivity extends AppCompatActivity {
                 final Dialog dialog = new Dialog(this);
                 dialog.setContentView(R.layout.dodaj_belesku1);
 
-                Button add = (Button) dialog.findViewById(R.id.dodaj_belesku2);
-                add.setOnClickListener(new View.OnClickListener() {
+                Button sacuvaj = (Button) dialog.findViewById(R.id.dodaj_belesku2);
+                sacuvaj.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
                         EditText naslov = (EditText) dialog.findViewById(R.id.naslov);
@@ -162,6 +162,7 @@ public class MainActivity extends AppCompatActivity {
                         dialog.dismiss();
 
                     }
+
                 });
 
                 dialog.show();
