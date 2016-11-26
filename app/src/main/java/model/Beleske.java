@@ -11,20 +11,20 @@ public class Beleske {
 
         public static final String TABLE_NAME_USERS = "Beleska";
         public static final String FIELD_NAME_ID     = "id";
-        public static final String TABLE_MOVIE_NASLOV = "naslov";
-        public static final String TABLE_MOVIE_OPIS = "opis";
-        public static final String TABLE_MOVIE_DATUM_KREIRANJA = "datum_kreiranja";
+        public static final String TABLE_BELESKE_NASLOV = "naslov";
+        public static final String TABLE_BELESKE_OPIS = "opis";
+        public static final String TABLE_BELESKE_DATUM_KREIRANJA = "datum_kreiranja";
 
         @DatabaseField(columnName = FIELD_NAME_ID, generatedId = true)
         private int Id;
 
-        @DatabaseField(columnName = TABLE_MOVIE_NASLOV)
+        @DatabaseField(columnName = TABLE_BELESKE_NASLOV)
         private String Naslov;
 
-        @DatabaseField(columnName = TABLE_MOVIE_OPIS)
+        @DatabaseField(columnName = TABLE_BELESKE_OPIS)
         private String Opis;
 
-        @DatabaseField(columnName = TABLE_MOVIE_DATUM_KREIRANJA)
+        @DatabaseField(columnName = TABLE_BELESKE_DATUM_KREIRANJA)
         private String Datum_kreiranja;
 
 

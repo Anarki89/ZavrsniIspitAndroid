@@ -171,7 +171,7 @@ public class SecondActivity extends AppCompatActivity {
                 try {
                     getDatabaseHelper().getBeleskeDao().update(b);
 
-                    showMessage("Actor detail updated");
+                    showMessage("Detalji beleske su osvezeni");
 
                 } catch (SQLException e) {
                     e.printStackTrace();
@@ -182,7 +182,7 @@ public class SecondActivity extends AppCompatActivity {
                 try {
                     getDatabaseHelper().getBeleskeDao().delete(b);
 
-                    showMessage("Actor deleted");
+                    showMessage("Beleska obrisana");
 
                     finish(); //moramo pozvati da bi se vratili na prethodnu aktivnost
                 } catch (SQLException e) {

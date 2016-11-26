@@ -11,7 +11,7 @@
         android:name=".MainActivity"
         android:theme="@style/AppTheme.NoActionBar"
         android:icon="@mipmap/ic_launcher"
-        android:label="Actors">
+        android:label="Beleske">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -8,9 +8,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.preference.PreferenceActivity;
 import android.preference.PreferenceManager;
-import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.app.NotificationCompat;
@@ -145,11 +143,11 @@ public class MainActivity extends AppCompatActivity {
                             boolean status = prefs.getBoolean(NOTIF_STATUS, false);
 
                             if (toast){
-                                Toast.makeText(MainActivity.this, "Added new actor", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(MainActivity.this, "Dodata nova beleska", Toast.LENGTH_SHORT).show();
                             }
 
                             if (status){
-                                showStatusMesage("Added new actor");
+                                showStatusMesage("Dodata nova beleska");
                             }
 
                             //REFRESH
@@ -169,7 +167,7 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case R.id.about:
 
-                break;
+
             case R.id.settings:
                 startActivity(new Intent(MainActivity.this, Preferences.class));
                 break;
