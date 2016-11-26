@@ -1,6 +1,7 @@
 package com.example.android.beleske;
 
 
+import android.app.AlertDialog;
 import android.app.Dialog;
 import android.app.NotificationManager;
 import android.content.Context;
@@ -135,6 +136,7 @@ public class MainActivity extends AppCompatActivity {
                         b.setOpis(opis.getText().toString());
                         b.setDatum_kreiranja(datum_kreiranja.getText().toString());
 
+
                         try {
                             getDatabaseHelper().getBeleskeDao().create(b);
 
@@ -167,9 +169,13 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case R.id.about:
 
+               /* AlertDialog alertDialog = new Dialog(this).prepareDialog();
+                alertDialog.show();
+                break;*/
+                // crveni mi prepareDialog() ne znam zasto...
 
             case R.id.settings:
-                startActivity(new Intent(MainActivity.this, Preferences.class));
+                startActivity(new Intent(MainActivity.this, preferences.Preferences.class));
                 break;
         }
 
